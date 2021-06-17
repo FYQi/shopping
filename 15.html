@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>購物網站版型</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-heart text-info" aria-hidden="true"> </i>
+                六角血拼卖卖
+           
+        </a>
+        <!--购物车内的数量（button 内包含icon，数量badge-->
+        <div class="dropdown ml-auto">
+            
+            <button class=" btn btn-sm btn-cart" type="button" id="dropdownMenuButton"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right p-2" style="min-width: 300px;"
+                  aria-labelledby="dropdownMenuButton">
+                <table class="table table-sm">
+                    <h6 class="mb-3 pt-2">已选择商品</h6>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal" class="text-muted" data-toggle="modal" data-target="#removeModal"
+                                   data-title="删除 金牌西装 1件" data-backdrop="static">
+                              
+                                   <i class="far- fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">金牌西装</td>
+                            <td class="align-middle">1件</td>
+                            <td class="align-middle text-right">$520</td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal" class="text-muted" data-toggle="modal" data-target="#removeModal"
+                                   data-title="删除 金牌女装 1件" data-backdrop="static">
+                                   <i class="far- fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">金牌女装</td>
+                            <td class="align-middle">1件</td>
+                            <td class="align-middle text-right">$480</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--btn-block把按钮撑到100%-->
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#editModal" data-title=""
+                     data-backdrop="static">结账去</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        
+
+        <!--jumbotron-bg--css设定背景图-->
+        <!--d-flex align-items-end调整字的位置-->
+        <div class="container">
+            <div class="bg-lighter">
+                <!--class="bg-lighter" 内容设置css-->
+                <h1 class="display-4 font-weight-bold">买到剁手手！跳楼大拍卖</h1>
+                <p class="lead">This is a modified</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list">
+                        <i class="fab fa-old-republic mr-2"></i>金牌专卖店
+                    </a>
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-gift mr-2"></i>礼品区
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-rainbow mr-2"></i>影音商品
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-dog mr-2"></i>宠物专用
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" >
+                        <i class="fas fa-homec mr-2"></i>居家环境
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!--pane-1-->
+                    <div class="tab-pane active" id="pane-1">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control col-md-4 col-9 rounded-0" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-warning my-2 my-sm-0 rounded-0" type="submit">Search</button>
+                        </form>
+                        <div class="row mt-2 mt-md-4 mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--box-shadow阴影效果css-->
+                                    <!--border-0移除线条-->
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1486250944723-86bca2b15b06?w=1351"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西装</h5>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <!--border-top-0上面线条移除-->
+                                        <!--bg-white底色白色-->
+                                        <div class="btn-group btn-group-sm">...
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                         src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西装</h5>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secoundary">SM</a>
+                                            <a href="#" class="btn btn-outline-secoundary disabled">M</a>
+                                            <a href="#" class="btn btn-outline-secoundary">L</a>
+                                            <a href="#" class="btn btn-outline-secoundary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--zhaopian-->
+                                    <img class="card-img-top"
+                                         src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西装</h5>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        
+                                        <a href="#" class="btn btn-outline-secoundary btn-block">抢购去</a>
+                                            
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--zhaopian-->
+                                    <img class="card-img-top"
+                                         src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西装</h5>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        
+                                        <a href="#" class="btn btn-outline-secoundary btn-block">抢购去</a>
+                                            
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--zhaopian-->
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1485373650022-3ed53f62b8f3?w=634"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西装</h5>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        
+                                        <a href="#" class="btn btn-outline-secoundary btn-block disabled">缺货中</a>
+                                            
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--pane-2-->
+                    <div class="tab-pane" id="pane-2">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                         src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西装</h5>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">  
+                                        <a href="#" class="btn btn-outline-secoundary btn-block disabled">缺货中</a>
+                                                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                         src="https://images.unsplash.com/photo-1485373650022-3ed53f62b8f3?w=634"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西装</h5>
+                                        <p class="card-text">This is a wider card with supporing text</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">  
+                                        <a href="#" class="btn btn-outline-secoundary btn-block disabled">缺货中</a>
+                                                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-center mb-5">
+                <li class="page-item disable"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            
+
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>
